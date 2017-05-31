@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<suite name="SuiteName" parallel="Tests">
+  <test name="Test1">
+    <parameter name= "bro"  value="Chrome"/>
+    <classes>
+      <class name="com.selenium.org.Batch9Maven.TestNGCLass"/>
+
+    </classes>
+  </test> <!-- Test -->
+</suite> <!-- Suite -->
