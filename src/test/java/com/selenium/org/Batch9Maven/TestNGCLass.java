@@ -34,8 +34,12 @@ public class TestNGCLass {
 	{
 		
 		logger.log(LogStatus.INFO, "Doing Log in functionality");
+		
+		JDBCConnection ref2= new JDBCConnection();
+		String username=ref2.jdbcClass();
+		
 		LoginClass ref= new LoginClass(driver);
-		ref.login_function();
+		ref.login_function(username);
 		
 		logger.log(LogStatus.INFO, "Loggin was succeefulll");
 

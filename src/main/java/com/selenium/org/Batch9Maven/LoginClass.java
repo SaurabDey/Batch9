@@ -18,15 +18,15 @@ public class LoginClass
 		driver=driver2;
 	}
 	
-	private void username_functon()
+	private void username_functon(String usern)
 	{
 		WebElement username=driver.findElement(mailID_locator);
-		username.sendKeys("Vijay");
+		username.sendKeys(usern);
 	}
 	private void pass_function()
 	{
 		WebElement password=driver.findElement(password_locator);
-		password.sendKeys("vpassw");
+		password.sendKeys("my hard code Password");
 	}
 	
 	private void loginbutClick()
@@ -34,10 +34,10 @@ public class LoginClass
 		WebElement login_btn=driver.findElement(click_submit_locator);
 		login_btn.click();	
 	}
-	public void login_function()
+	public void login_function(String userName)
 	{
 		
-		username_functon();
+		username_functon(userName);
 		pass_function();
 		loginbutClick();		
 	}
