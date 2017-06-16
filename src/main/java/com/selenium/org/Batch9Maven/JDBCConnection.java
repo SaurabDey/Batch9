@@ -9,7 +9,7 @@ import java.sql.Statement;
 public class JDBCConnection 
 {
 
-public String jdbcClass() 
+public String jdbcClass() throws ClassNotFoundException 
 {
 	String name = null;
 	String email;
@@ -31,10 +31,7 @@ public String jdbcClass()
 		}
 		
 	}
-	catch (ClassNotFoundException e) {
-		// TODO Auto-generated catch block
-		e.printStackTrace();
-	}
+	
 	catch (SQLException e) {
 		// TODO Auto-generated catch block
 		e.printStackTrace();

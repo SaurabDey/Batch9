@@ -30,7 +30,7 @@ public class TestNGCLass {
 	ExtentTest logger;
 
 	@Test
-	public void f() 
+	public void f() throws ClassNotFoundException 
 	{
 		
 		logger.log(LogStatus.INFO, "Doing Log in functionality");
